@@ -6,7 +6,8 @@ import time
 
 # Start the game
 dinosaur_game_url = 'https://elgoog.im/t-rex/'
-driver = webdriver.Chrome(executable_path="chromedriver")
+chrome_driver_path = "chrome-drive-folder/chromedriver"
+driver = webdriver.Chrome(executable_path=chrome_driver_path)
 driver.get(dinosaur_game_url)
 time.sleep(3)
 
